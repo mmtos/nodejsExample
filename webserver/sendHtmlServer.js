@@ -1,8 +1,11 @@
 const http = require('http');
+const fs = require('fs');
 
 const server = http.createServer( (req,res) => {
-	res.write('<h1>Hello</h1>')
-	res.end('<p>nodeJs world</p>')
+	fs.readFile('./sendHtml.html',(err,data) =>{
+		if(err){throw err;}
+		res.end(data);
+	});
 });
 
 server.listen(8080, () =>{
