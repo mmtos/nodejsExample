@@ -1,4 +1,4 @@
 /.vs/*
 /bin/*
 /obj/*
-/expressserver/npm_modules/*
+expressserver/npm_modules/*
