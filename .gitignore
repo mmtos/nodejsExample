@@ -1,4 +1,4 @@
 /.vs/*
 /bin/*
 /obj/*
-expressserver/node_modules/
+**/node_modules/
